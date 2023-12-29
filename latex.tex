@@ -1,68 +1,107 @@
 \documentclass{article}
-\usepackage{listings}
+\usepackage{fontawesome} % For FontAwesome icons
+\usepackage{graphicx}    % For images
 
 \begin{document}
 
-\section{HTML Signup Form}
-\lstset{language=HTML,
-        basicstyle=\ttfamily,
-        keywordstyle=\color{blue}\ttfamily,
-        stringstyle=\color{red}\ttfamily,
-        commentstyle=\color{green}\ttfamily,
-        morecomment=[l][\color{magenta}]{\#}
-}
+\title{Login with us}
+\author{}
+\date{}
+\maketitle
 
-\begin{lstlisting}
+\section*{Document Structure}
+
+\begin{verbatim}
+\documentclass{article}
+\usepackage{fontawesome} % For FontAwesome icons
+\usepackage{graphicx}    % For images
+
+\begin{document}
+
+\title{Login with us}
+\author{}
+\date{}
+\maketitle
+\end{verbatim}
+
+\section*{HTML Structure}
+
+\begin{verbatim}
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Signup Form</title>
-    <style>
-        /* Add your CSS styles here */
-    </style>
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <h2>Signup</h2>
-    <form action="/signup" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+    <!-- link css  -->
+    \usepackage{style} % Assuming style.css contains your CSS rules
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+    <!-- icons  -->
+    \usepackage{fontawesome} % Assuming FontAwesome is available in your LaTeX distribution
 
-        <input type="submit" value="Signup">
-    </form>
+    \title{Login with us}
+\end{verbatim}
 
-</body>
-</html}
-\end{lstlisting}
+\section*{Body}
 
-\section{HTML Login Form}
-\begin{lstlisting}
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login Form</title>
-    <style>
-        /* Add your CSS styles here */
-    </style>
-</head>
-<body>
+\begin{verbatim}
+\begin{document}
 
-    <h2>Login</h2>
-    <form action="/login" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+\begin{center}
+    \begin{minipage}{0.6\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.5]{speakap_logo} \\
+            Coders
+        \end{center}
+        
+        \section*{Sign Up}
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+        It's not long before you embark on this journey!
 
-        <input type="submit" value="Login">
-    </form>
+        \begin{center}
+            \begin{tabular}{c}
+                \begin{minipage}{0.7\textwidth}
+                    \textbf{E-mail} \\
+                    \fbox{\begin{minipage}{\linewidth}
+                        \texttt{name@abc.com} \hspace{1cm} \faAt
+                    \end{minipage}}
 
-</body>
-</html}
-\end{lstlisting}
+                    \vspace{0.5cm}
+
+                    \textbf{Password} \\
+                    \fbox{\begin{minipage}{\linewidth}
+                        \texttt{8+ (a, A, 1, \#)} \hspace{1cm} \faLock
+                    \end{minipage}}
+                \end{minipage}
+            \end{tabular}
+
+            \vspace{0.5cm}
+
+            \begin{tabular}{c}
+                \begin{minipage}{0.7\textwidth}
+                    \textbf{I've read and agree with T\&C} \hspace{1cm} \fbox{\begin{minipage}{0.2\linewidth}
+                        \texttt{[ ]}
+                    \end{minipage}}
+                \end{minipage}
+            \end{tabular}
+
+            \vspace{0.5cm}
+
+            \fbox{\begin{minipage}{0.4\textwidth}
+                \texttt{Create an Account}
+            \end{minipage}}
+
+            \vspace{0.5cm}
+
+            \textbf{Already have an account} \\
+            \texttt{\textbackslash href\{*\}\{Sign In\}}
+        \end{center}
+    \end{minipage}
+\end{center}
+
+\end{document}
+\end{verbatim}
 
 \end{document}
